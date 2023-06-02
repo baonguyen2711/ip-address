@@ -5,9 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-       <Routes>
+        <Routes>
           <Route path="/address" element={<IdAddress />} />
-          </Routes>
+        </Routes>
     </BrowserRouter>
   );
 }
