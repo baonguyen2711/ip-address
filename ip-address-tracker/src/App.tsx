@@ -6,8 +6,8 @@ function App() {
   return (
     <BrowserRouter>
        <Routes>
-                    <Route path="/address" element={<IdAddress />} />
-</Routes>
+          <Route path="/address" element={<IdAddress />} />
+          </Routes>
     </BrowserRouter>
   );
 }
