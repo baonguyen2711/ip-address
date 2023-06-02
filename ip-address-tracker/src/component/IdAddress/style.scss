@@ -1,0 +1,102 @@
+* {
+  font-family: 'Rubik' !important;
+}
+.root {
+  font-family: 'Rubik';
+  position: relative;
+  &__header {
+    width: 100%;
+    background-image: url('~/assets/img/pattern-bg-desktop.png');
+    height: 30vh;
+    padding-top: 20px;
+    &--topic {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .ant-input-affix-wrapper {
+      font-size: 18px;
+    }
+    .ant-input-group-wrapper {
+      padding: 20px 400px;
+      font-size: 18px !important;
+    }
+    .ant-btn-primary {
+      background-color: hsl(0, 0%, 17%);
+      height: 38px;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 70%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 0 100px;
+    width: 85%;
+    z-index: 9999;
+    &--element {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 8px;
+      padding: 10px;
+      div {
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          text-transform: uppercase;
+          color: hsl(0, 0%, 59%);
+          text-align: left !important;
+          margin-block-start: 0;
+          margin-block-end: 0
+        }
+        h3 {
+          margin-block-start: 0;
+          margin-block-end: 0;
+        }
+        &:not(:last-child) {
+          border-right: 1px solid #ccc;
+        }
+      }
+    }
+    &--map {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      .leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+        width: 100%;
+        height: 100vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .root {
+    &__header {
+      height: 50vh;
+      .ant-input-group-wrapper {
+        padding: 20px;
+      }
+    }
+    &__content {
+      width: 90%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      top: 50%;
+      &--element {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        div {
+          &:not(:last-child) {
+            border-right: unset;
+          }
+        }
+      }
+    }
+  }
+}
