@@ -96,6 +96,9 @@
           &:not(:last-child) {
             border-right: unset;
           }
+          h3 {
+            height: unset;
+          }
         }
       }
     }
