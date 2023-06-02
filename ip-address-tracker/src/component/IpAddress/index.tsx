@@ -10,7 +10,7 @@ import 'leaflet/dist/leaflet.css'
 
 const API_KEY = 'at_EogJizNJy1tYMxrO8gGmpnynffaOB'
 
-const IdAddress = () => {
+const IpAddress = () => {
   const [ipAddress, setIpAddress] = useState<string>('')
   const [location, setLocation] = useState<string>('')
   const [timezone, setTimezone] = useState<string>('')
@@ -105,4 +105,4 @@ const IdAddress = () => {
     </>
   )
 }
-export default IdAddress
+export default IpAddress

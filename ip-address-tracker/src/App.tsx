@@ -1,14 +1,14 @@
-import { Route, Routes } from 'react-router';
-import IdAddress from './component/IdAddress';
-import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
+import IpAddress from './component/IpAddress'
 
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route path="/address" element={<IdAddress />} />
-        </Routes>
+      <Routes>
+        <Route path='/*' element={<IpAddress />} />
+      </Routes>
     </BrowserRouter>
-  );
+  )
 }
-export default App;
+export default App
