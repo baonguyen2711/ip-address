@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router'
 import { BrowserRouter } from 'react-router-dom'
-import IpAddress from './component/IpAddress'
+import IpAddress from './components/IpAddress'
 
 function App() {
   return (
